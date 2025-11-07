@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(250, 250, 250);
+  font-size: xx-large;
+}
+
+
+header {
+  width: 100%;
+  height: 45vh;
+  background: url('image-hero-desktop.jpg') center/cover no-repeat;
+  position: relative;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+  color: white;
+  font-size:xx-large;
+  transition: transform 0.3s;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: large;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: large;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+.nav-links a:hover {
+  color: black;
+  transform: scale(1.07);
+}
+.box{
+    height: 267px;
+    width: 650px;
+    background-color: white;
+    position: absolute;
+    top: 290px;
+    left: 27%;
+    border-radius: 8.5px;
+    border: 1.5px solid rgba(0,0,0,0.2);  
+}
+.box .img1{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: -30px;
+    left: 45%;
+}
+.box h1{
+    position: absolute;
+    top: 50px;
+    left: 15%;
+    font-size: 30px;
+    font-weight: 600;
+}
+.box h5{
+    position: absolute;
+    top: 100px;
+    left: 8%;
+    font-size: 18px;
+    font-weight: 400;
+    color: gray;
+}
+.btn1{
+  background-color: rgb(60, 180, 171);
+  width: 200px;
+  height: 54px;
+  position: absolute;
+  top: 150px;
+  left: 8%;
+  border: none;
+  border-radius: 25px;
+  font-family: 'Poppins', sans-serif; 
+  color: white;
+  font-size: 18px;
+}
+.btn2{
+  background-color: rgb(244, 244, 244);
+  width: 200px;
+  height: 54px;
+  position: absolute;
+  top: 150px;
+  right: 8%;
+  border: none;
+  border-radius: 25px;
+  font-family: 'Poppins', sans-serif; 
+  color: grey;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img2{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+}
+
+
+.stats{
+ 
+  width: 650px;
+  height: 200px;
+  background: #fff;
+  position: absolute;
+  
+  top: 590px;
+  left: 27%;
+  border-radius: 8.5px;
+  padding: 30px 35px 35px;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  border: 1.5px solid rgba(0,0,0,0.2); 
+}
+
+.stats-numbers{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.stat .value{
+  font-weight: 700;
+  font-size: 28px;
+  color: #111;
+}
+
+.stat .label{
+  margin-top: 6px;
+  font-size: 14px;
+  color: gray;
+}
+
+.divider{
+  width: 1px;
+  height: 48px;
+  background: #e9e9e9;
+  display: inline-block;
+}
+
+.progress{
+  margin-top: 28px;
+  width: 100%;
+  height: 12px;
+  background: #efefef;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.progress-fill{
+  --progress: 70%; 
+  width: var(--progress);
+  height: 100%;
+  background: rgb(60, 180, 171);
+  border-radius: inherit;
+}
+.About-box{
+  width: 650px;
+  background: #ffffff;
+  position: absolute;
+  top: 850px;
+  left: 27%;
+  border-radius: 8.5px;
+  padding: 30px 35px 35px;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  border: 1.5px solid rgba(0,0,0,0.2);
+} 
+.About-box h2{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.About-box p{
+  font-size: 16px;
+  color: gray;
+  line-height: 1.5;
+}
+.Bamboo-Stand{
+  width: 650px;
+  background: #ffffff;
+  position: absolute;
+  top: 1150px;
+  left: 27%;
+  border-radius: 8.5px;
+  padding: 30px 35px 35px;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  border: 1.5px solid rgba(0,0,0,0.2);
+  height: 200px;
+}
+.Bamboo-Stand h1{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  position:  absolute;
+  top: 10%;
+  left: 5%;
+}
+.pledge{
+  font-size: 16px;
+  color: rgb(60, 180, 171);
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.Bamboo-Stand p{
+  font-size: 16px;
+  color: gray;
+  line-height: 1.5;
+  font-family: sans-serif;
+  position: absolute;
+  top: 38%;
+  left: 5%;
+}
+.Bamboo-Stand h2{
+  font-size: smaller;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+
+.btn{
+  position: absolute;
+  right: 5%;
+  top: 72%;
+  background-color: rgb(60, 180, 171);
+  color: #fff;
+  width: 200px;
+  height: 54px;
+  border: none;
+  border-radius: 28px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color .2s ease, transform .05s ease;
+}
+
+.btn:hover{ background-color: rgb(52, 160, 152); }
+.btn:active{ transform: translateY(1px); }
+
+
+.Black-Stand{
+  width: 650px;
+  background: #ffffff;
+  position: absolute;
+  top: 1400px;
+  left: 27%;
+  border-radius: 8.5px;
+  padding: 30px 35px 35px;
+  border: 1.5px solid rgba(0,0,0,0.2);
+  height: 200px;
+}
+.Black-Stand h1{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  position:  absolute;
+  top: 10%;
+  left: 5%;
+}
+.Black-Stand p{
+  font-size: 16px;
+  color: gray;
+  line-height: 1.5;
+  font-family: sans-serif;
+  position: absolute;
+  top: 38%;
+  left: 5%;
+}
+.Black-Stand h2{
+  font-size: smaller;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+
+.Mahogany-Stand{
+  width: 650px;
+  background: #ffffff;
+  position: absolute;
+  top: 1650px;
+  left: 27%;
+  border-radius: 8.5px;
+  padding: 30px 35px 35px;
+  border: 1.5px solid rgba(0,0,0,0.2);
+  height: 200px;
+  opacity: 1;
+}
+.Mahogany-Stand h1{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  position:  absolute;
+  top: 10%;
+  left: 5%;
+}
+.Mahogany-Stand p{
+  font-size: 16px;
+  color: gray;
+  line-height: 1.5;
+  font-family: sans-serif;
+  position: absolute;
+  top: 38%;
+  left: 5%;
+}
+.Mahogany-Stand h2{
+  font-size: smaller;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+.btn.disabled{
+  background: #e5e5e5;
+  color: #9b9b9b;
+  cursor: not-allowed;
+}
+
+
+@media (max-width: 900px){
+  nav{ padding: 20px 24px; font-size: large; }
+  header{ height: 42vh; }
+  .box, .stats, .About-box, .Bamboo-Stand, .Black-Stand, .Mahogany-Stand{
+    width: 92%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .btn{ width: 170px; height: 48px; font-size: 16px; top: 74%; }
+  .box h1{ left: 10%; font-size: 24px; }
+  .box h5{ left: 6%; right: 6%; font-size: 16px; }
+}
+
+@media (max-width: 560px){
+  .btn{ width: 160px; height: 46px; font-size: 15px; right: 5%; }
+  .pledge{ font-size: 14px; }
+  .stat .value{ font-size: 22px; }
+  .stat .label{ font-size: 12px; }
+  
+  .box{ height: 320px; }
+  .btn1,
+  .btn2{ width: 88%; left: 50%; transform: translateX(-50%); }
+  .btn1{ top: 150px; }
+  .btn2{ top: 210px; right: auto; }
+  
+  .img2{ top: 50%; left: 16px; transform: translateY(-50%); }
+}
